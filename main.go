@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println(captcha.Do(1, 1, 1, 1))
-	fmt.Println(captcha.Do(1, 1, 1, 2))
+	fmt.Println(captcha.Encode(1, 1, 1, 1))
+	fmt.Println(captcha.Encode(1, 1, 1, 2))
+	fmt.Println(captcha.Encode(1, 1, 1, 3))
+	fmt.Println(captcha.Encode(1, 1, 1, 4))
+	fmt.Println(captcha.Encode(1, 1, 1, 5))
 }

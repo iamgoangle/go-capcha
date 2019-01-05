@@ -2,7 +2,7 @@ package captcha
 
 import "fmt"
 
-func Do(pattern int, leftO int, operator int, rightO int) string {
+func Encode(pattern, leftO, operator, rightO int) string {
 	result := ""
 
 	if rightO > 9 {
@@ -35,6 +35,10 @@ func Do(pattern int, leftO int, operator int, rightO int) string {
 	if pattern == 1 {
 		result = fmt.Sprintf("%v %v %v", leftO, operatorWord[operator-1], numberWord[rightO-1])
 	}
+
+	// if pattern == 2 {
+
+	//}
 
 	return result
 }
